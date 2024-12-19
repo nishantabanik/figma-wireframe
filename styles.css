@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,134 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", serif;
   line-height: 1.6;
-  color: #333;
+  color: rgb(39, 38, 38);
+}
+
+.header {
+  top: 0;
+  /* color: #fff; */
+  overflow: hidden;
+  background-color: #8f8f8f;
+  padding: 1rem;
+  border: 1px solid;
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #1c1a1a;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  background: #ebedef;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid;
+  background: #ebedef;
+  padding: 10px;
+}
+
+.nav-links a:active,
+.nav-links a:hover {
+  border: 1px solid;
+  background: #19f1c2;
+  padding: 10px;
+}
+
+.home-items {
+  display: grid;
+  background-color: #c4c4c4;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 5rem;
+  /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.home-item {
+  flex: 1 1 calc(30% - 1rem);
+  background: #ededed;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.home-item > h3 {
+  background-color: #FFFFF;
+}
+
+button.free,
+button.continue {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button.free:hover,
+button.continue:hover {
+  background: #ccc;
+}
+
+.customer-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.customer-gallery img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.customer-gallery img:hover {
+  opacity: 0.3;
+  /* transform: rotate(360deg); Rotate the image */
+}
+
+.home-item button {
+  margin: 1rem auto;
+  display: block;
+}
+
+.home-items .home-item:last-child {
+  border-radius: 20px;
+}
+
+/* .header-logo h1 {
+  margin: 0;
+  font-size: 1rem;
+} */
+
+.header-nav {
+  padding: 0 2rem;
+}
+
+.customer-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.companies h3 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
