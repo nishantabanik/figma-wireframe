@@ -67,7 +67,6 @@ h1 {
 
 .home-items {
   display: grid;
-  border: solid 2px red;
   background-color: #c4c4c4;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
